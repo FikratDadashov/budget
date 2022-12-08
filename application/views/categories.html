@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Categories</title>
+	<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+<form action="">
+	<select name="" id="">
+		<optgroup label="Expense">
+
+		</optgroup>
+
+	</select>
+</form>
+
+<!-- playstation[games (fab)], gem[accessoies (far)] -->
+
+<span style="font-size: 30px" id="js-cat">
+	<span class=""></span>
+	<span></span>
+</span>
+
+
+<button id="js-send">send me data</button>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script>
+, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'fa-money-bill-alt', 'fa-handshake'];
+
+$('form').on('change', function() {
+	var selected = $(this).find(':selected');
+
+	$('#js-cat').find('span').last().text(selected.text())
+	.end().first().removeAttr('class').addClass('fas ' + arr[selected.val()]);
+});
+
+
+$('#js-send').on('click', function() {
+	var options = [];
+	$('form').find('option').each(function(i, el) {
+		//options.push()
+	});
+
+	console.log(options);
+})
+
+
+</script>
+</body>
+</html>
